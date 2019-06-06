@@ -6,6 +6,6 @@ class FizzBuzzTest < Minitest::Test
   end
 
   def test_first_buzz
-    asssert_equal "Buzz", FizzBuzz.new(5).evaluate
+    assert_equal "Buzz", FizzBuzz.new(5).evaluate
   end
 end
