@@ -1,11 +1,7 @@
+$LOAD_PATH << './lib'
+
+require "fizz_buzz"
+
 (1..100).each do |i|
-	if i % 3 == 0 && i % 5 == 0
-		puts("Fizz Buzz")
-	elsif i % 3 == 0
-		puts("Fizz")
-	elsif i % 5 == 0
-		puts("Buzz")
-	else
-		puts(i)
-	end
+  puts(FizzBuzz.new(i).evaluate)
 end
